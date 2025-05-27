@@ -4,6 +4,8 @@
         "wait.h": "c",
         "unistd.h": "c",
         "semaphore.h": "c",
-        "mman.h": "c"
+        "mman.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c"
     }
 }
