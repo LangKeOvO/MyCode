@@ -1,7 +1,8 @@
 // jinchen1.c
+// gcc jincheng1.c -o jincheng1
+// ./jincheng1
 // 该代码演示了如何使用fork创建两个子进程，并在父进程和子进程中交替输出字符。
-// gcc jinchen1.c -o jinchen1
-// ./jinchen1
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -17,10 +18,10 @@ int main() {
     } else if (pid1 == 0) {
         // 子进程1
         while (1) {
-            srand(getpid()); // 每个进程设置不同随机种子
+            //srand(getpid()); // 每个进程设置不同随机种子
             printf("b");
             fflush(stdout);
-            usleep(100000 + rand() % 300000);
+            //usleep(100000 + rand() % 300000);
         }
     }
 
@@ -31,19 +32,19 @@ int main() {
     } else if (pid2 == 0) {
         // 子进程2
         while (1) {
-            srand(getpid()); // 每个进程设置不同随机种子
+            //srand(getpid()); // 每个进程设置不同随机种子
             printf("a");
             fflush(stdout);
-            usleep(100000 + rand() % 300000);
+            //usleep(100000 + rand() % 300000);
         }
     }
 
     // 父进程
     while (1) {
-        srand(getpid()); // 每个进程设置不同随机种子
+        //srand(getpid()); // 每个进程设置不同随机种子
         printf("c");
         fflush(stdout);
-        usleep(100000 + rand() % 300000);
+        //usleep(100000 + rand() % 300000);
     }
 
     exit(0);

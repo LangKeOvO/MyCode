@@ -1,7 +1,7 @@
 // jincheng2_2.c
-// gcc jinchen2_2.c -o jincheng2_2
-// ./jinchen2_2
-
+// gcc jincheng2_2.c -o jincheng2_2
+// ./jincheng2_2
+// 该代码演示了如何使用信号量实现进程间的互斥访问，避免输出撕裂现象。
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

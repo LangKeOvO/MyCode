@@ -1,7 +1,8 @@
 //jinchen2_1.c
+// gcc jincheng2_1.c -o jincheng2_1
+// ./jincheng2_1
 // 该代码演示了如何使用 fork 创建两个子进程，并在父进程和子进程中交替输出字符，模拟输出撕裂现象。
-// gcc jinchen2_1.c -o jinchen2_1
-// ./jinchen2_1
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
